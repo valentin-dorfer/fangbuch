@@ -1,0 +1,42 @@
+/* Backgrounds */
+.image-bg {
+    background-image: url(../img/bg-login.jpg);
+    background-size: 100% 100%;
+}
+
+/* Login / Register Page */
+.login-reg-container {
+    padding: 20px;
+}
+
+/* Widget */
+.fangDerWoche .ibox .product-imitation{
+    padding: 0!important;
+}
+.fangDerWoche .ibox .product-imitation img {
+    width: 98%;
+    margin: 1%;
+}
+.weatherTable td {
+    line-height: 2.5!important;
+}
+.fang .ibox-content .product-images img{
+    width: 100%;
+}
+.product-images {
+    max-height: 300px;
+}
+.slick-list {
+    max-height: 300px!important;
+}
+.bewertung {
+    direction: rtl;
+}
+.bewertung > i:hover:before,
+.bewertung > i:hover ~ i:before{
+    content: "\f005";
+    color: #1ab394;
+}
+.margin-bot {
+    margin-bottom: 20px;
+}

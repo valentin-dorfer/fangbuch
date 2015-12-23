@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fangbuch | Forum</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Weather Icons style -->
+    <link href="css/plugins/weatherIcons/weather-icons-wind.min.css" rel="stylesheet">
+    <link href="css/plugins/weatherIcons/weather-icons.min.css" rel="stylesheet">
+
+    <!-- Slick Slider -->
+    <link href="css/plugins/slick/slick.css" rel="stylesheet">
+    <link href="css/plugins/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Custom style -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="fixed-sidebar fixed-nav">
+
+<div id="wrapper">
+
+<nav class="navbar-default navbar-static-side fixed-sidebar" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" width="48" height="48" src="img/profile_small.jpg" />
+                             </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Valentin Dorfer</strong>
+                             </span> <span class="text-muted text-xs block">Einstellungen<b class="caret"></b></span> </span> </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="">Mein Profil</a></li>
+                        <li><a href="profile.html">Konto bearbeiten</a></li>
+                        <li><a href="friends.html">Freunde</a></li>
+                        <li><a href="mailbox.html">Nachrichten</a></li>
+                        <li class="divider"></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-fw fa-file-text-o"></i> <span class="nav-label">Fangbuch - News</span></a>
+            </li>
+            <li>
+                <a href="fangbuch.html"><i class="fa fa-fw fa-file-text-o"></i> <span class="nav-label">Fangbuch</span></a>
+            </li>
+            <li class="active">
+                <a href="forum.html.html"><i class="fa fa-fw fa-file-archive-o"></i> <span class="nav-label">Forum</span></a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div id="page-wrapper" class="gray-bg">
+<div class="row border-bottom">
+    <nav class="navbar navbar-fixed-top  " role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Suche..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <span class="m-r-sm text-muted welcome-message">Willkommen bei Ihrem FANGBUCH</span>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">2</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="profile.html" class="pull-left">
+                                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                            </a>
+                            <div class="media-body">
+                                <small class="pull-right text-navy">vor 14 Minuten</small>
+                                <strong>Valentin Dorfer</strong><br>hat dir eine neue Nachricht gesendet. <br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="profile.html" class="pull-left">
+                                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="pull-right text-navy">vor 2 Stunden</small>
+                                <strong>Valentin Dorfer</strong><br>hat dir eine neue Nachricht gesendet. <br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html">
+                                <i class="fa fa-fw fa-envelope"></i> <strong>Alle Nachrichten anzeigen</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i> Abmelden
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>Forum</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+                <strong>Forum</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-8">
+        <div class="title-action">
+            <a href="" class="btn btn-primary">Seite neu laden</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+<div class="col-lg-12">
+<div class="wrapper wrapper-content animated fadeInRight">
+
+<div class="ibox-content m-b-sm border-bottom">
+    <div class="p-xs">
+        <div class="pull-left m-r-md">
+            <i class="fa fa-globe text-navy mid-icon"></i>
+        </div>
+        <h2>Willkommen im Fangbuch Forum</h2>
+        <span>Durchstöbern Sie das Forum, oder verfassen Sie eigene Einträge.</span>
+        <a href="" class="btn btn-primary pull-right">Foreneintrag verfassen</a>
+    </div>
+</div>
+
+<div class="ibox-content forum-container">
+
+<div class="forum-title">
+    <div class="pull-right forum-desc">
+        <samll>Einträge: 1.203</samll>
+    </div>
+    <h3>Gewässer</h3>
+</div>
+<div class="forum-item active">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="forum-icon">
+                <i class="fa fa-info"></i>
+            </div>
+            <a href="forum_post.html" class="forum-item-title">Informationen</a>
+            <div class="forum-sub-title">Neu im Forum?, dann ließ dir doch gleich einmal die Informationen durch!</div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            890
+                                        </span>
+            <div>
+                <small>Aufrufe</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            120
+                                        </span>
+            <div>
+                <small>Themen</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            154
+                                        </span>
+            <div>
+                <small>Einträge</small>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="forum-item">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="forum-icon">
+                <i class="fa fa-bolt"></i>
+            </div>
+            <a href="forum_post.html" class="forum-item-title">Brandstätter See</a>
+            <div class="forum-sub-title"></div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            40
+                                        </span>
+            <div>
+                <small>Aufrufe</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            2
+                                        </span>
+            <div>
+                <small>Themen</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            14
+                                        </span>
+            <div>
+                <small>Einträge</small>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="forum-item">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="forum-icon">
+                <i class="fa fa-bolt"></i>
+            </div>
+            <a href="forum_post.html" class="forum-item-title">Donau - Hafenbecken</a>
+            <div class="forum-sub-title">Schlögner Schlinge - OÖ</div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            12
+                                        </span>
+            <div>
+                <small>Aufrufe</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            1
+                                        </span>
+            <div>
+                <small>Themen</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            3
+                                        </span>
+            <div>
+                <small>Einträge</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="forum-title">
+    <div class="pull-right forum-desc">
+        <samll>Einträge: 14</samll>
+    </div>
+    <h3>Fischarten</h3>
+</div>
+
+<div class="forum-item active">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="forum-icon">
+                <i class="fa fa-info"></i>
+            </div>
+            <a href="forum_post.html" class="forum-item-title">Informationen</a>
+            <div class="forum-sub-title">Neu im Forum?, dann ließ dir doch gleich einmal die Informationen durch!</div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            890
+                                        </span>
+            <div>
+                <small>Aufrufe</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            120
+                                        </span>
+            <div>
+                <small>Themen</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            154
+                                        </span>
+            <div>
+                <small>Einträge</small>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="forum-item">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="forum-icon">
+                    <i class="fa fa-info"></i>
+                </div>
+                <a href="forum_post.html" class="forum-item-title">Schuppenkarpfen</a>
+                <div class="forum-sub-title"></div>
+            </div>
+            <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            14
+                                        </span>
+                <div>
+                    <small>Aufrufe</small>
+                </div>
+            </div>
+            <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            1
+                                        </span>
+                <div>
+                    <small>Themen</small>
+                </div>
+            </div>
+            <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            2
+                                        </span>
+                <div>
+                    <small>Einträge</small>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="forum-item">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="forum-icon">
+                <i class="fa fa-info"></i>
+            </div>
+            <a href="forum_post.html" class="forum-item-title">Zander</a>
+            <div class="forum-sub-title"></div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            14
+                                        </span>
+            <div>
+                <small>Aufrufe</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            1
+                                        </span>
+            <div>
+                <small>Themen</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            2
+                                        </span>
+            <div>
+                <small>Einträge</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="forum-title">
+    <div class="pull-right forum-desc">
+        <samll>Einträge: 14</samll>
+    </div>
+    <h3>Köder</h3>
+</div>
+
+<div class="forum-item active">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="forum-icon">
+                <i class="fa fa-info"></i>
+            </div>
+            <a href="forum_post.html" class="forum-item-title">Informationen</a>
+            <div class="forum-sub-title">Neu im Forum?, dann ließ dir doch gleich einmal die Informationen durch!</div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            890
+                                        </span>
+            <div>
+                <small>Aufrufe</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            120
+                                        </span>
+            <div>
+                <small>Themen</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            154
+                                        </span>
+            <div>
+                <small>Einträge</small>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="forum-item">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="forum-icon">
+                <i class="fa fa-info"></i>
+            </div>
+            <a href="forum_post.html" class="forum-item-title">Banane - Fisch - Boilie</a>
+            <div class="forum-sub-title">Was haltet Ihr davon?</div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            3
+                                        </span>
+            <div>
+                <small>Aufrufe</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            2
+                                        </span>
+            <div>
+                <small>Themen</small>
+            </div>
+        </div>
+        <div class="col-md-1 forum-info">
+                                        <span class="views-number">
+                                            14
+                                        </span>
+            <div>
+                <small>Einträge</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="footer">
+    <div class="pull-right">
+        <strong>Letzter Login:</strong> 01.12.2015 um 14:30 Uhr
+    </div>
+    <div>
+        <strong>Copyright</strong> Fangbuch.at &copy; 2015-2016
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- Idle Timer plugin -->
+<script src="js/plugins/idle-timer/idle-timer.min.js"></script>
+
+<!-- Toastr script -->
+<script src="js/plugins/toastr/toastr.min.js"></script>
+
+<!-- slick carousel-->
+<script src="js/plugins/slick/slick.min.js"></script>
+<script>
+
+
+
+    $(document).ready(function(){
+
+
+        $('.product-images').slick({
+            dots: true
+        });
+
+    });
+
+    $(document).ready(function () {
+
+        // Set idle time
+        $( document ).idleTimer( 5000 );
+
+    });
+
+    $( document ).on( "idle.idleTimer", function(event, elem, obj){
+        toastr.options = {
+            "positionClass": "toast-bottom-right",
+            "timeOut": 8000
+        }
+
+        toastr.warning('Sie sind gerade abwesend.','Abwesenheit');
+        $('.custom-alert').fadeIn();
+        $('.custom-alert-active').fadeOut();
+
+    });
+
+    $( document ).on( "active.idleTimer", function(event, elem, obj, triggerevent){
+        // function you want to fire when the user becomes active again
+        toastr.clear();
+        $('.custom-alert').fadeOut();
+        toastr.success('Alle Funktionen stehen Ihnen wieder zur Verfügung.','Willkommen zurück. ');
+
+
+
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fangbuch | Startseite</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Weather Icons style -->
+    <link href="css/plugins/weatherIcons/weather-icons-wind.min.css" rel="stylesheet">
+    <link href="css/plugins/weatherIcons/weather-icons.min.css" rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <!-- Custom style -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="fixed-sidebar fixed-nav">
+
+<div id="wrapper">
+
+<nav class="navbar-default navbar-static-side fixed-sidebar" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" width="48" height="48" src="img/profile_small.jpg" />
+                             </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Valentin Dorfer</strong>
+                             </span> <span class="text-muted text-xs block">Einstellungen<b class="caret"></b></span> </span> </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="">Mein Profil</a></li>
+                        <li><a href="profile.html">Konto bearbeiten</a></li>
+                        <li><a href="friends.html">Freunde</a></li>
+                        <li><a href="mailbox.html">Nachrichten</a></li>
+                        <li class="divider"></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-fw fa-file-text-o"></i> <span class="nav-label">Fangbuch - News</span></a>
+            </li>
+            <li>
+                <a href="fangbuch.html"><i class="fa fa-fw fa-globe"></i> <span class="nav-label">Fangbuch</span></a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div id="page-wrapper" class="gray-bg">
+<div class="row border-bottom">
+    <nav class="navbar navbar-fixed-top  " role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Suche..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <span class="m-r-sm text-muted welcome-message">Willkommen bei Ihrem FANGBUCH</span>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">2</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="profile.html" class="pull-left">
+                                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                            </a>
+                            <div class="media-body">
+                                <small class="pull-right text-navy">vor 14 Minuten</small>
+                                <strong>Valentin Dorfer</strong><br>hat dir eine neue Nachricht gesendet. <br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="profile.html" class="pull-left">
+                                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="pull-right text-navy">vor 2 Stunden</small>
+                                <strong>Valentin Dorfer</strong><br>hat dir eine neue Nachricht gesendet. <br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html">
+                                <i class="fa fa-fw fa-envelope"></i> <strong>Alle Nachrichten anzeigen</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i> Abmelden
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>Meine Freunde</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="">Profil</a>
+            </li>
+            <li class="active">
+                <strong>Freunde</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-8">
+        <div class="title-action">
+            <a href="" class="btn btn-primary">Seite neu laden</a>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+<div class="row">
+    <div class="col-lg-3">
+        <div class="contact-box center-version">
+
+            <a href="profile.html">
+
+                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+
+
+                <h3 class="m-b-xs"><strong>Valentin Dorfer</strong></h3>
+
+                <div class="font-bold">Karpfenfischer</div>
+                <address class="m-t-md">
+                    <strong>Oberösterreich</strong><br>
+                    401 eingetragene Fänge<br>
+                </address>
+
+            </a>
+            <div class="contact-box-footer">
+                <div class="m-t-xs btn-group">
+                    <a class="btn btn-xs btn-primary"><i class="fa fa-fw fa-envelope"></i> Nachricht</a>
+                    <a class="btn alertQuestion btn-xs btn-danger"><i class="fa fa-fw fa-user-times"></i> Löschen</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="contact-box center-version">
+
+            <a href="profile.html">
+
+                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+
+
+                <h3 class="m-b-xs"><strong>Andreas Drexler</strong></h3>
+
+                <div class="font-bold">Spinnfischer</div>
+                <address class="m-t-md">
+                    <strong>Oberösterreich</strong><br>
+                    4 eingetragene Fänge<br>
+                </address>
+
+            </a>
+            <div class="contact-box-footer">
+                <div class="m-t-xs btn-group">
+                    <a class="btn btn-xs btn-primary"><i class="fa fa-fw fa-envelope"></i> Nachricht</a>
+                    <a class="btn alertQuestion btn-xs btn-danger"><i class="fa fa-fw fa-user-times"></i> Löschen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="contact-box center-version">
+
+            <a href="profile.html">
+
+                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+
+
+                <h3 class="m-b-xs"><strong>Lukas Koblmüller</strong></h3>
+
+                <div class="font-bold">keine Angabe</div>
+                <address class="m-t-md">
+                    <strong>Oberösterreich</strong><br>
+                    40 eingetragene Fänge<br>
+                </address>
+
+            </a>
+            <div class="contact-box-footer">
+                <div class="m-t-xs btn-group">
+                    <a class="btn btn-xs btn-primary"><i class="fa fa-fw fa-envelope"></i> Nachricht</a>
+                    <a class="btn alertQuestion btn-xs btn-danger"><i class="fa fa-fw fa-user-times"></i> Löschen</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="contact-box center-version">
+
+            <a href="profile.html">
+
+                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+
+
+                <h3 class="m-b-xs"><strong>Andreas Kehrer</strong></h3>
+
+                <div class="font-bold">Karpfenfischer</div>
+                <address class="m-t-md">
+                    <strong>Oberösterreich</strong><br>
+                    14 eingetragene Fänge<br>
+                </address>
+
+            </a>
+            <div class="contact-box-footer">
+                <div class="m-t-xs btn-group">
+                    <a class="btn btn-xs btn-primary"><i class="fa fa-fw fa-envelope"></i> Nachricht</a>
+                    <a class="btn alertQuestion btn-xs btn-danger"><i class="fa fa-fw fa-user-times"></i> Löschen</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="contact-box center-version">
+
+            <a href="profile.html">
+
+                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+
+
+                <h3 class="m-b-xs"><strong>Stefan Moser</strong></h3>
+
+                <div class="font-bold">Zanderfischer</div>
+                <address class="m-t-md">
+                    <strong>Oberösterreich</strong><br>
+                    41 eingetragene Fänge<br>
+                </address>
+
+            </a>
+            <div class="contact-box-footer">
+                <div class="m-t-xs btn-group">
+                    <a class="btn btn-xs btn-primary"><i class="fa fa-fw fa-envelope"></i> Nachricht</a>
+                    <a class="btn btn-xs alertQuestion btn-danger"><i class="fa fa-fw fa-user-times"></i> Löschen</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+<div class="footer">
+    <div class="pull-right">
+        <strong>Letzter Login:</strong> 01.12.2015 um 14:30 Uhr
+    </div>
+    <div>
+        <strong>Copyright</strong> Fangbuch.at &copy; 2015-2016
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- Idle Timer plugin -->
+<script src="js/plugins/idle-timer/idle-timer.min.js"></script>
+
+<!-- Toastr script -->
+<script src="js/plugins/toastr/toastr.min.js"></script>
+
+<!-- Sweet alert -->
+<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+<script>
+
+    $('.alertQuestion').click(function () {
+        swal({
+            title: "Sind Sie sicher?",
+            text: "Ihr Freund wird aus Ihrer Liste gelöscht!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Ja, Löschen!",
+            closeOnConfirm: false
+        }, function () {
+            swal("Gelöscht!", "Ihr Freund wurde aus Ihrer Liste gelöscht.", "success");
+        });
+    });
+
+    $(document).ready(function () {
+
+        // Set idle time
+        $( document ).idleTimer( 5000 );
+
+    });
+
+    $( document ).on( "idle.idleTimer", function(event, elem, obj){
+        toastr.options = {
+            "positionClass": "toast-bottom-right",
+            "timeOut": 8000
+        }
+
+        toastr.warning('Sie sind gerade abwesend.','Abwesenheit');
+        $('.custom-alert').fadeIn();
+        $('.custom-alert-active').fadeOut();
+
+    });
+
+    $( document ).on( "active.idleTimer", function(event, elem, obj, triggerevent){
+        // function you want to fire when the user becomes active again
+        toastr.clear();
+        $('.custom-alert').fadeOut();
+        toastr.success('Alle Funktionen stehen Ihnen wieder zur Verfügung.','Willkommen zurück. ');
+
+
+
+    });
+</script>
+</body>
+
+</html>

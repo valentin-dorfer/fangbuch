@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fangbuch | Startseite</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Weather Icons style -->
+    <link href="css/plugins/weatherIcons/weather-icons-wind.min.css" rel="stylesheet">
+    <link href="css/plugins/weatherIcons/weather-icons.min.css" rel="stylesheet">
+
+    <!-- Slick Slider -->
+    <link href="css/plugins/slick/slick.css" rel="stylesheet">
+    <link href="css/plugins/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Custom style -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="fixed-sidebar fixed-nav">
+
+<div id="wrapper">
+
+<nav class="navbar-default navbar-static-side fixed-sidebar" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" width="48" height="48" src="img/profile_small.jpg" />
+                             </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Valentin Dorfer</strong>
+                             </span> <span class="text-muted text-xs block">Einstellungen<b class="caret"></b></span> </span> </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="">Mein Profil</a></li>
+                        <li><a href="profile.html">Konto bearbeiten</a></li>
+                        <li><a href="friends.html">Freunde</a></li>
+                        <li><a href="mailbox.html">Nachrichten</a></li>
+                        <li class="divider"></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-fw fa-file-text-o"></i> <span class="nav-label">Fangbuch - News</span></a>
+            </li>
+            <li class="active">
+                <a href="fangbuch.html"><i class="fa fa-fw fa-file-text-o"></i> <span class="nav-label">Fangbuch</span></a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div id="page-wrapper" class="gray-bg">
+<div class="row border-bottom">
+    <nav class="navbar navbar-fixed-top  " role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Suche..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <span class="m-r-sm text-muted welcome-message">Willkommen bei Ihrem FANGBUCH</span>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope"></i>  <span class="label label-warning">2</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="profile.html" class="pull-left">
+                                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                            </a>
+                            <div class="media-body">
+                                <small class="pull-right text-navy">vor 14 Minuten</small>
+                                <strong>Valentin Dorfer</strong><br>hat dir eine neue Nachricht gesendet. <br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <a href="profile.html" class="pull-left">
+                                <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                            </a>
+                            <div class="media-body ">
+                                <small class="pull-right text-navy">vor 2 Stunden</small>
+                                <strong>Valentin Dorfer</strong><br>hat dir eine neue Nachricht gesendet. <br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html">
+                                <i class="fa fa-fw fa-envelope"></i> <strong>Alle Nachrichten anzeigen</strong>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i> Abmelden
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>Fangbuch</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+                <strong>Fangbuch</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-8">
+        <div class="title-action">
+            <a href="" class="btn btn-primary">Seite neu laden</a>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="ibox product-detail fang">
+                <div class="ibox-content">
+
+                    <div class="row">
+                        <div class="col-md-5">
+
+
+                            <div class="product-images">
+
+                                <div>
+                                    <img src="img/profile_small.jpg">
+                                </div>
+                                <div>
+                                    <div class="image-imitation">
+                                        [IMAGE 2]
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="image-imitation">
+                                        [IMAGE 3]
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-7">
+
+                            <div class="social-avatar">
+                                <a href="" class="pull-left">
+                                    <img alt="image" src="img/profile_small.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <a href="#">
+                                        Andreas Drexler
+                                    </a>
+                                    <small class="text-muted">Gestern 19:12 Uhr - 06.12.2015</small>
+                                </div>
+                            </div>
+                            <hr>
+                            <h4>Beschreibung</h4>
+
+                            <div class="small text-muted">
+                                Völlig unerwartet, an einem Abend ohne jegliche Wasseraktivität war plötzlich in der Abenddämmerung
+                                der Vollrun!
+                            </div>
+                            <dl class="dl-horizontal m-t-md small">
+                                <dt>Fischart</dt>
+                                <dd>Schuppenkarpfen</dd>
+                                <dt>Gewicht</dt>
+                                <dd>4,5kg</dd>
+                                <dt>Länge</dt>
+                                <dd>-</dd>
+                                <dt>Köder</dt>
+                                <dd>Bananefisch Boilie</dd>
+                                <dt>Gewässer</dt>
+                                <dd>Donau - Hafenbecken</dd>
+                                <dt>Fangdatum</dt>
+                                <dd>14.07.2015</dd>
+                                <dt>Uhrzeit</dt>
+                                <dd>14:50 Uhr</dd>
+
+                            </dl>
+                            <div class="text-right">
+                                <div class="btn-group">
+                                    <button data-toggle="modal" data-target="#myModal" class="btn btn-white btn-sm"><i class="fa fa-fw fa-star"></i> Voten </button>
+                                    <button class="btn btn-white btn-sm"><i class="fa fa-fw fa-envelope"></i> Nachricht </button>
+                                </div>
+                            </div>
+
+                            <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content animated bounceInRight">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <i class="fa fa-star modal-icon"></i>
+                                            <h4 class="modal-title">Fang bewerten</h4>
+                                            <small class="font-bold">Bewertungen bestimmen den Fang der Woche</small>
+                                        </div>
+                                        <div class="modal-body text-center bewertung">
+                                            <i class="fa fa-3x fa-fw fa-star-o"></i>
+                                            <i class="fa fa-3x fa-fw fa-star-o"></i>
+                                            <i class="fa fa-3x fa-fw fa-star-o"></i>
+                                            <i class="fa fa-3x fa-fw fa-star-o"></i>
+                                            <i class="fa fa-3x fa-fw fa-star-o"></i>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">Abbrechen</button>
+                                            <button type="button" class="btn btn-primary">Bewerten</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ibox-footer">
+                    <i class="fa fa-fw fa-users"></i> Freunde
+                    <small class="text-muted pull-right">
+                        <label class="label label-primary">Schuppenkarpfen</label>
+                        <label class="label label-info">Brandstätter See</label>
+                    </small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="ibox product-detail fang">
+                <div class="ibox-content">
+
+                    <div class="row">
+                        <div class="col-md-5">
+
+
+                            <div class="product-images">
+
+                                <div>
+                                    <img src="img/profile_small.jpg">
+                                </div>
+                                <div>
+                                    <div class="image-imitation">
+                                        [IMAGE 2]
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="image-imitation">
+                                        [IMAGE 3]
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-7">
+
+                            <div class="social-avatar">
+                                <a href="" class="pull-left">
+                                    <img alt="image" src="img/profile_small.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <a href="#">
+                                        Valentin Dorfer
+                                    </a>
+                                    <small class="text-muted">Heute 14:12 Uhr - 07.12.2015</small>
+                                </div>
+                            </div>
+                            <hr>
+                            <h4>Beschreibung</h4>
+
+                            <div class="small text-muted">
+                                Völlig unerwartet, an einem Abend ohne jegliche Wasseraktivität war plötzlich in der Abenddämmerung
+                                der Vollrun!
+                            </div>
+                            <dl class="dl-horizontal m-t-md small">
+                                <dt>Fischart</dt>
+                                <dd>Spiegelkarpfen</dd>
+                                <dt>Gewicht</dt>
+                                <dd>14,5kg</dd>
+                                <dt>Länge</dt>
+                                <dd>112cm</dd>
+                                <dt>Köder</dt>
+                                <dd>Bananefisch Boilie</dd>
+                                <dt>Gewässer</dt>
+                                <dd>Donau - Hafenbecken</dd>
+                                <dt>Fangdatum</dt>
+                                <dd>14.07.2015</dd>
+                                <dt>Uhrzeit</dt>
+                                <dd>14:50 Uhr</dd>
+
+                            </dl>
+                            <div class="text-right">
+                                <div class="btn-group">
+                                    <button data-toggle="modal" data-target="#myModal" class="btn btn-white btn-sm"><i class="fa fa-fw fa-star"></i> Voten </button>
+                                    <button class="btn btn-white btn-sm"><i class="fa fa-fw fa-envelope"></i> Nachricht </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ibox-footer">
+                    <i class="fa fa-fw fa-globe"></i> Öffentlich
+                    <small class="text-muted pull-right">
+                        <label class="label label-primary">Spiegelkarpfen</label>
+                        <label class="label label-info">Donau - Hafenbecken</label>
+                    </small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="pull-right">
+        <strong>Letzter Login:</strong> 01.12.2015 um 14:30 Uhr
+    </div>
+    <div>
+        <strong>Copyright</strong> Fangbuch.at &copy; 2015-2016
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- Idle Timer plugin -->
+<script src="js/plugins/idle-timer/idle-timer.min.js"></script>
+
+<!-- Toastr script -->
+<script src="js/plugins/toastr/toastr.min.js"></script>
+
+<!-- slick carousel-->
+<script src="js/plugins/slick/slick.min.js"></script>
+<script>
+
+
+
+    $(document).ready(function(){
+
+
+        $('.product-images').slick({
+            dots: true
+        });
+
+    });
+
+    $(document).ready(function () {
+
+        // Set idle time
+        $( document ).idleTimer( 5000 );
+
+    });
+
+    $( document ).on( "idle.idleTimer", function(event, elem, obj){
+        toastr.options = {
+            "positionClass": "toast-bottom-right",
+            "timeOut": 8000
+        }
+
+        toastr.warning('Sie sind gerade abwesend.','Abwesenheit');
+        $('.custom-alert').fadeIn();
+        $('.custom-alert-active').fadeOut();
+
+    });
+
+    $( document ).on( "active.idleTimer", function(event, elem, obj, triggerevent){
+        // function you want to fire when the user becomes active again
+        toastr.clear();
+        $('.custom-alert').fadeOut();
+        toastr.success('Alle Funktionen stehen Ihnen wieder zur Verfügung.','Willkommen zurück. ');
+
+
+
+    });
+</script>
+</body>
+
+</html>
